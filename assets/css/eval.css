@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+  overflow-x: hidden;}
+  
+ 
+  header {
+    width: 100%;
+    background: rgb(241, 241, 234);
+     }
+  
+  .haut,
+  .navbar {
+    width: 100%;
+    min-height: 60px;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+  } 
+
+  .haut{
+    display: flex;
+    justify-content: space-between;
+   /* padding: 0 30px;*/
+    flex-wrap: wrap;
+    
+  }
+
+  .haut ul { min-width: 280px;
+   
+}
+  
+  li {
+    display: block;
+    width: 100px;
+   /* height: 60px;*/
+    text-align: center;
+    line-height: 60px;
+  }
+  
+  .haut>a {
+    text-decoration: none;
+    color: rgb(246, 244, 251);
+  }
+
+
+  
+   /* .navbar{
+    background: rgb(154, 164, 165);
+    border-top: 1px solid rgb(250, 245, 250);
+  border-bottom: 1px solid rgb(101, 8, 199, 01, 8, 199);
+  }*/
+
+  .navbar{
+    background: rgb(154, 164, 165);
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    
+    }
+    
+    .logo{
+        /*border: 1px solid green;*/
+        height: 100%;display: flex;
+        align-items: center;
+        font-size:clamp(1.5rem, 5vw, 2.5rem );
+        padding-left: 5px;
+    }
+    
+    .logo a{
+        transition: color 0.5s;
+    }
+    
+   /* .logo a:hover{
+        color: goldenrod;
+    }*/
+    
+    .nav-ul{
+        /*border: 1px solid yellowgreen;*/
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    
+    }
+    
+    .nav-ul a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: 1px solid aqua;*/
+    height: 60px;
+    width: 100px;
+    font-size: 1.5rem;
+    
+    }
+
+    h1{
+       margin-top: 2%;
+        color: goldenrod;
+    }
+
+    h3{
+        margin-top: 1%;
+         color: goldenrod;
+     }
+
+    /*#video{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        background-size: cover;   
+    }*/
+    section>article{
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+        min-width: 240px; } 
+    
+
+    .imgbox{
+    position:relative;
+    top: 5%;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    display: flex; 
+    float: left;
+    border-radius: 10px;
+    gap: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+
+    }
+
+    /*.btn{
+        margin-top: 100%;
+        display: block;
+        min-width: 150px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        background: yellow;
+        color: black;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60%;
+    }*/
+
+
+
+    footer{
+        
+        height: 200px;
+        background-color: rgb(19, 26, 24);
+        color: azure;
+        float: left;
+    }
+    
+    .hamburger :first-child{
+        margin-top: 0;
+    }
+    
+    .bar1,.bar2,.bar3{
+        width: 35px;
+        height: 6px;
+        background-color: azure;
+        margin-top: 6px;
+        border-radius: 5px;
+        transition: all 0.7s;
+    }
+    
+    .open .bar1,
+    .open .bar2,
+    .open .bar3{
+        background-color: goldenrod;
+    }
+    
+    .open .bar1{
+        transform: translateY(200%) rotate(-45deg);
+    }
+    
+    .open .bar2{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    
+    .open .bar3{
+        transform: translateY(-200%) rotate(45deg);
+    }
+    
+    @media screen and (max-width:768px){
+        
+        .hamburger{
+            display: flex;
+        }
+    
+        @media screen and (min-width:767px){
+        
+            .hamburger{
+                display: flex;
+            }
+        }
+    
+    }
+
+
+    /*h4,h2{
+        text-align: center;
+        font-size: 60px;
+        font-family: sans-serif;
+        font-weight: bold;}*/
+    
+    
